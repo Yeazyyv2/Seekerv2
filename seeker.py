@@ -110,8 +110,8 @@ sys.stderr = sys.__stderr__
 def banner():
 	with open(META_FILE, 'r') as metadata:
 		json_data = loads(metadata.read())
-		twitter_url = json_data['twitter']
-		comms_url = json_data['comms']
+		twitter_url = json_data['Discord']
+		comms_url = json_data['Topluluk']
 
 	art = r'''
                         __

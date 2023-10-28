@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: thewhiteh4t/seeker:latest
+          tags: Yeazyyv2/Seekerv2:latest

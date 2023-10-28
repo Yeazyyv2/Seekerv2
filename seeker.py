@@ -111,7 +111,7 @@ def banner():
 	with open(META_FILE, 'r') as metadata:
 		json_data = loads(metadata.read())
 		twitter_url = json_data['discord']
-		comms_url = json_data['topluluk']
+		comms_url = json_data['Topluluk']
 
 	art = r'''
                         __
@@ -123,7 +123,7 @@ def banner():
 	utils.print(f'{G}{art}{W}\n')
 	utils.print(f'{G}[>] {C}yapımcı   : {W}YeazyyTheGreat')
 	utils.print(f'{G} |---> {C}discord   : {W}{twitter_url}')
-	utils.print(f'{G} |---> {C}topluluk : {W}{comms_url}')
+	utils.print(f'{G} |---> {C}Topluluk : {W}{comms_url}')
 	utils.print(f'{G}[>] {C}sürüm      : {W}{VERSION}\n')
 
 

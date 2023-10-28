@@ -268,7 +268,7 @@ def wait():
 		sleep(2)
 		size = path.getsize(RESULT)
 		if size == 0 and printed is False:
-			utils.print(f'{G}[+] {C}Waiting for Client...{Y}[ctrl+c to exit]{W}\n')
+			utils.print(f'{G}[+] {C}Kullanıcı Bekleniyor...{Y}[Çıkmak Için ctrl + c]{W}\n')
 			printed = True
 		if size > 0:
 			data_parser()

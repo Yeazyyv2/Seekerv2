@@ -170,22 +170,22 @@ def template_select(site):
 			selected = int(input(f'{G}[>] {W}'))
 		if selected < 0:
 			print()
-			utils.print(f'{R}[-] {C}Invalid Input!{W}')
+			utils.print(f'{R}[-] {C}Geçersiz Giriş!{W}')
 			sys.exit()
 	except ValueError:
 		print()
-		utils.print(f'{R}[-] {C}Invalid Input!{W}')
+		utils.print(f'{R}[-] {C}Geçersiz Giriş!{W}')
 		sys.exit()
 
 	try:
 		site = templ_json['templates'][selected]['dir_name']
 	except IndexError:
 		print()
-		utils.print(f'{R}[-] {C}Invalid Input!{W}')
+		utils.print(f'{R}[-] {C}Geçersiz Giriş!{W}')
 		sys.exit()
 
 	print()
-	utils.print(f'{G}[+] {C}Loading {Y}{templ_json["templates"][selected]["name"]} {C}Template...{W}')
+	utils.print(f'{G}[+] {C}Web Sitesi {Y}{templ_json["templates"][selected]["name"]} {C}Yükleniyor...{W}')
 
 	imp_file = templ_json['templates'][selected]['import_file']
 	importlib.import_module(f'template.{imp_file}')
@@ -203,7 +203,7 @@ def server():
 	print()
 	port_free = False
 	utils.print(f'{G}[+] {C}Port : {W}{port}\n')
-	utils.print(f'{G}[+] {C}Starting PHP Server...{W}', end='')
+	utils.print(f'{G}[+] {C}PHP Sunucusu Başlatılıyor...{W}', end='')
 	cmd = ['php', '-S', f'0.0.0.0:{port}', '-t', f'template/{SITE}/']
 
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:

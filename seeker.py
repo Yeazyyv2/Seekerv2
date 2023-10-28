@@ -115,16 +115,16 @@ def banner():
 
 	art = r'''
                         __
-  ______  ____   ____  |  | __  ____ _______
- /  ___/_/ __ \_/ __ \ |  |/ /_/ __ \\_  __ \
- \___ \ \  ___/\  ___/ |    < \  ___/ |  | \/
-/____  > \___  >\___  >|__|_ \ \___  >|__|
+  ______  ____   ____  |  | __  ____ _______    \      /
+ /  ___/_/ __ \_/ __ \ |  |/ /_/ __ \\_  __ \    \    /
+ \___ \ \  ___/\  ___/ |    < \  ___/ |  | \/     \  /
+/____  > \___  >\___  >|__|_ \ \___  >|__|         \/ by Yeazyy
      \/      \/     \/      \/     \/'''
 	utils.print(f'{G}{art}{W}\n')
-	utils.print(f'{G}[>] {C}Created By   : {W}thewhiteh4t')
-	utils.print(f'{G} |---> {C}Twitter   : {W}{twitter_url}')
-	utils.print(f'{G} |---> {C}Community : {W}{comms_url}')
-	utils.print(f'{G}[>] {C}Version      : {W}{VERSION}\n')
+	utils.print(f'{G}[>] {C}Yapımcı   : {W}YeazyyTheGreat')
+	utils.print(f'{G} |---> {C}Discord   : {W}{twitter_url}')
+	utils.print(f'{G} |---> {C}Topluluk : {W}{comms_url}')
+	utils.print(f'{G}[>] {C}Sürüm      : {W}{VERSION}\n')
 
 
 def send_webhook(content, msg_type):
@@ -301,13 +301,13 @@ def data_parser():
 
 {G}[+] {C}OS         : {W}{var_os}
 {G}[+] {C}Platform   : {W}{var_platform}
-{G}[+] {C}CPU Cores  : {W}{var_cores}
+{G}[+] {C}Çekirdek  : {W}{var_cores}
 {G}[+] {C}RAM        : {W}{var_ram}
-{G}[+] {C}GPU Vendor : {W}{var_vendor}
+{G}[+] {C}İşlemci : {W}{var_vendor}
 {G}[+] {C}GPU        : {W}{var_render}
-{G}[+] {C}Resolution : {W}{var_res}
-{G}[+] {C}Browser    : {W}{var_browser}
-{G}[+] {C}Public IP  : {W}{var_ip}
+{G}[+] {C}Genişlik : {W}{var_res}
+{G}[+] {C}Tarayıcı    : {W}{var_browser}
+{G}[+] {C}Ip Adresi   : {W}{var_ip}
 '''
 		utils.print(device_info)
 		send_telegram(info_json, 'device_info')
@@ -332,10 +332,10 @@ def data_parser():
 				data_row.extend([var_continent, var_country, var_region, var_city, var_org, var_isp])
 				ip_info = f'''{Y}[!] IP Information :{W}
 
-{G}[+] {C}Continent : {W}{var_continent}
-{G}[+] {C}Country   : {W}{var_country}
-{G}[+] {C}Region    : {W}{var_region}
-{G}[+] {C}City      : {W}{var_city}
+{G}[+] {C}Kıta : {W}{var_continent}
+{G}[+] {C}Ülke   : {W}{var_country}
+{G}[+] {C}Bölge    : {W}{var_region}
+{G}[+] {C}Şehir      : {W}{var_city}
 {G}[+] {C}Org       : {W}{var_org}
 {G}[+] {C}ISP       : {W}{var_isp}
 '''
@@ -362,12 +362,12 @@ def data_parser():
 				data_row.extend([var_lat, var_lon, var_acc, var_alt, var_dir, var_spd])
 				loc_info = f'''{Y}[!] Location Information :{W}
 
-{G}[+] {C}Latitude  : {W}{var_lat}
-{G}[+] {C}Longitude : {W}{var_lon}
-{G}[+] {C}Accuracy  : {W}{var_acc}
-{G}[+] {C}Altitude  : {W}{var_alt}
-{G}[+] {C}Direction : {W}{var_dir}
-{G}[+] {C}Speed     : {W}{var_spd}
+{G}[+] {C}Enleme  : {W}{var_lat}
+{G}[+] {C}Boylama : {W}{var_lon}
+{G}[+] {C}Yükseklik : {W}{var_acc}
+{G}[+] {C}Genişlik  : {W}{var_alt}
+{G}[+] {C}Direktion : {W}{var_dir}
+{G}[+] {C}Hız     : {W}{var_spd}
 '''
 				utils.print(loc_info)
 				send_telegram(result_json, 'location')

@@ -16,7 +16,7 @@
             "import_file": "mod_whatsapp"
         },
         {
-            "name": "WhatsApp Redirect",
+            "name": "WhatsApp Yönlendirmesi",
             "dir_name": "whatsapp_redirect",
             "import_file": "mod_whatsapp_redirect"
         },
@@ -31,12 +31,12 @@
             "import_file": "mod_zoom"
         },
         {
-            "name": "Google ReCaptcha",
+            "name": "Google Doğrulama",
             "dir_name": "captcha",
             "import_file": "mod_captcha"
         },
         {
-            "name": "Custom Link Preview",
+            "name": "Özel Link Ön Izlemesi",
             "dir_name": "custom_og_tags",
             "import_file": "mod_custom_og_tags"
         }

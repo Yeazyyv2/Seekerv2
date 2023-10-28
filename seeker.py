@@ -110,8 +110,8 @@ sys.stderr = sys.__stderr__
 def banner():
 	with open(META_FILE, 'r') as metadata:
 		json_data = loads(metadata.read())
-		twitter_url = json_data['Discord']
-		comms_url = json_data['Topluluk']
+		twitter_url = json_data['discord']
+		comms_url = json_data['topluluk']
 
 	art = r'''
                         __
@@ -121,10 +121,10 @@ def banner():
 /____  > \___  >\___  >|__|_ \ \___  >|__|         \/ by Yeazyy
      \/      \/     \/      \/     \/'''
 	utils.print(f'{G}{art}{W}\n')
-	utils.print(f'{G}[>] {C}Yapımcı   : {W}YeazyyTheGreat')
-	utils.print(f'{G} |---> {C}Discord   : {W}{twitter_url}')
-	utils.print(f'{G} |---> {C}Topluluk : {W}{comms_url}')
-	utils.print(f'{G}[>] {C}Sürüm      : {W}{VERSION}\n')
+	utils.print(f'{G}[>] {C}yapımcı   : {W}YeazyyTheGreat')
+	utils.print(f'{G} |---> {C}discord   : {W}{twitter_url}')
+	utils.print(f'{G} |---> {C}topluluk : {W}{comms_url}')
+	utils.print(f'{G}[>] {C}sürüm      : {W}{VERSION}\n')
 
 
 def send_webhook(content, msg_type):

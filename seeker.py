@@ -308,7 +308,8 @@ def data_parser():
 {G}[+] {C}Genişlik : {W}{var_res}
 {G}[+] {C}Tarayıcı    : {W}{var_browser}
 {G}[+] {C}Ip Adresi   : {W}{var_ip}
-Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
+
+{G}Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
 https://discord.com/invite/kqrKeHhYSB
 '''
 		utils.print(device_info)
@@ -340,7 +341,8 @@ https://discord.com/invite/kqrKeHhYSB
 {G}[+] {C}Şehir      : {W}{var_city}
 {G}[+] {C}Org       : {W}{var_org}
 {G}[+] {C}ISP       : {W}{var_isp}
-Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
+
+{G}Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
 https://discord.com/invite/kqrKeHhYSB
 '''
 				utils.print(ip_info)
@@ -372,7 +374,8 @@ https://discord.com/invite/kqrKeHhYSB
 {G}[+] {C}Genişlik  : {W}{var_alt}
 {G}[+] {C}Direktion : {W}{var_dir}
 {G}[+] {C}Hız     : {W}{var_spd}
-Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
+
+{G}Discord Sunucumuza Katılmak Için Neyi Bekliyorsun? Hadi sende katıl!
 https://discord.com/invite/kqrKeHhYSB
 '''
 				utils.print(loc_info)
